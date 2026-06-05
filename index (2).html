@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COG CORPORATION</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: #ffffff;
+      color: #000000;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(56px, 12vw, 128px);
+      letter-spacing: 0.04em;
+      line-height: 0.9;
+      opacity: 0;
+      animation: riseIn 0.7s cubic-bezier(0.22,1,0.36,1) forwards 0.1s;
+    }
+
+    .tagline {
+      font-size: clamp(16px, 3vw, 24px);
+      letter-spacing: 0.1em;
+      margin-top: 24px;
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards 0.4s;
+    }
+
+    .contact {
+      font-size: clamp(13px, 2vw, 18px);
+      letter-spacing: 0.08em;
+      margin-top: 40px;
+      color: #000;
+      opacity: 0;
+      animation: fadeIn 0.5s ease forwards 0.55s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes riseIn {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>COG<br>Corporation</h1>
+  <div class="tagline">Buying &amp; Selling of Ender Pearls</div>
+  <div class="contact">Contact Augustus / pikcles. on Discord for inquiries</div>
+
+</body>
+</html>
